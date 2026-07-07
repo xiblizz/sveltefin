@@ -11,6 +11,7 @@ deploy
 docker-compose.yml
 Dockerfile
 jellyfin-openapi-stable.json
+.claude
 CLAUDE.md
 README.md
 *.zip

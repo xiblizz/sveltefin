@@ -26,6 +26,7 @@ vite.config.ts.timestamp-*
 /static/mpv/*
 !/static/mpv/PLACEHOLDER.md
 
-# Backups
-/*.zip
-
+# Local
+.claude
+jellyfin-openapi-stable.json
+*.zip
