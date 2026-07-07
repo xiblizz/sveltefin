@@ -5,7 +5,7 @@ Bun in plain JavaScript. Designed so **Jellyfin never touches the internet**: on
 is exposed (behind a reverse proxy) and it talks to Jellyfin on localhost, with the user's
 Jellyfin token sealed inside an encrypted httpOnly cookie — never visible to the browser.
 
-Optional Jellyseerr/Overseerr integration adds a "Requests" tab next to your libraries.
+Optional Seerr integration adds a "Requests" tab next to your libraries.
 
 Documentation for design decisions lives in [docs/](docs/) — start with
 [docs/architecture.md](docs/architecture.md) and [docs/roadmap.md](docs/roadmap.md).
@@ -29,8 +29,7 @@ bun run dev
 ## Production
 
 ```sh
-bun run build
-ORIGIN=https://your-domain.example ADDRESS_HEADER=x-forwarded-for bun ./build/index.js
+docker compose up -d --build
 ```
 
 Put a reverse proxy (Caddy, nginx, ...) with TLS in front of port 3000. `ORIGIN` must match

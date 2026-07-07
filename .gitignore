@@ -1,4 +1,5 @@
 node_modules
+bun.lock*
 
 # Output
 .output
@@ -28,5 +29,6 @@ vite.config.ts.timestamp-*
 
 # Local
 .claude
+CLAUDE.md
 jellyfin-openapi-stable.json
 *.zip
