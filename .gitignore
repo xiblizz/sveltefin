@@ -28,6 +28,7 @@ vite.config.ts.timestamp-*
 !/static/mpv/PLACEHOLDER.md
 
 # Local
+.vscode
 .claude
 CLAUDE.md
 jellyfin-openapi-stable.json
