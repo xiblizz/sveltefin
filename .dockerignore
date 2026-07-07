@@ -1,0 +1,16 @@
+# Keep the context small; static/mpv/ (vendored libmpv build) MUST be included.
+.git
+node_modules
+build
+.svelte-kit
+.env
+.env.*
+!.env.example
+docs
+deploy
+docker-compose.yml
+Dockerfile
+jellyfin-openapi-stable.json
+CLAUDE.md
+README.md
+*.zip
